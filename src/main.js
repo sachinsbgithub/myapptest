@@ -1,4 +1,6 @@
 import './assets/main.css'
+import CustomComponents from 'custom-tailwind-components'
+import 'custom-tailwind-components/dist/styles.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -10,5 +12,6 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+app.use(CustomComponents)
 
 app.mount('#app')
